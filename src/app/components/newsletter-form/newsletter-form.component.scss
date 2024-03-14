@@ -1,0 +1,64 @@
+@import "../../../colors-variables.scss";
+
+.form-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    color: white;
+    padding: 40px 70px;
+
+    background: -webkit-linear-gradient($background-secondary, $primary-color);
+
+    h3{
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 20px;
+
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        text-align: justify;
+        letter-spacing: 2px;
+      
+    }
+
+    .text {
+        flex: 1;
+    }
+
+    form {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-top: 40px;
+
+        width: 100%;
+
+        input{
+            width: 100%;
+            margin-bottom: 40px;
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+
+            height: 60px;
+
+        }
+    }
+}
+
+@media(min-width: 1080px){
+    .form-section{
+        flex-direction: row;
+        gap: 115px;
+
+        padding: 40px 120px;
+
+    }
+    
+}
