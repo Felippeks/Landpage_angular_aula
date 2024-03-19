@@ -1,64 +1,65 @@
-@import "../../../colors-variables.scss";
+@import '../../../colors-variables.scss';
 
-.form-section{
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  padding: 40px 70px;
+
+    background: $background-secondary;
+  h3 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+  }
+
+  .text {
+    flex: 1;
+  }
+
+  form {
+    flex: 1;
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-    color: white;
-    padding: 40px 70px;
+    margin-top: 40px;
 
-    background: -webkit-linear-gradient($background-secondary, $primary-color);
+    width: 100%;
 
-    h3{
-        font-size: 36px;
-        font-weight: 600;
-        margin-bottom: 20px;
-
+    input {
+      width: 100%;
+      margin-bottom: 40px;
+      background: none;
+      border: none;
+      border-bottom: 1px solid white;
+      outline: none;
+      height: 60px;
     }
-    p{
-        font-size: 16px;
-        font-weight: 400;
-        text-align: justify;
-        letter-spacing: 2px;
-      
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px $background-secondary inset ;
+      -webkit-text-fill-color: white;
     }
-
-    .text {
-        flex: 1;
-    }
-
-    form {
-        flex: 1;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: column;
-        margin-top: 40px;
-
-        width: 100%;
-
-        input{
-            width: 100%;
-            margin-bottom: 40px;
-            background: none;
-            border: none;
-            border-bottom: 1px solid white;
-
-            height: 60px;
-
-        }
-    }
+  }
 }
 
-@media(min-width: 1080px){
-    .form-section{
-        flex-direction: row;
-        gap: 115px;
+@media (min-width: 1080px) {
+  .form-section {
+    flex-direction: row;
+    gap: 115px;
 
-        padding: 40px 120px;
-
-    }
-    
+    padding: 40px 120px;
+  }
 }

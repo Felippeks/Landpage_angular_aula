@@ -1,0 +1,3 @@
+interface NewsLetterResponse{
+    message: string
+}
